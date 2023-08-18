@@ -4,17 +4,12 @@ import { useEffect,useRef } from 'react'
 import { Button, Form, Input } from 'antd';
 import { useNavigate } from "react-router-dom"
 import  { userParams } from "./login.d";
-
-
-
 // 子组件
 import ChildCoonent from "../../components/Ceshi"
 
 interface IFnChildInstance{
     add:()=>void
 }
-
-
 export default function Login() {
     const childRef= useRef<IFnChildInstance>(null)
     let navigate = useNavigate()
@@ -24,11 +19,10 @@ export default function Login() {
         navigate('/home')
 
     };
-
     const getdata = (data:string) => {
         console.log(data,"这里是子组件传递过来的data")
     }
-    
+
     const onFinishFailed = (errorInfo: any) => {
         console.log('Failed:', errorInfo);
     };

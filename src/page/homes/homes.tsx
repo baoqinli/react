@@ -22,7 +22,7 @@ const FullPage = () => {
                   <button onClick={() => fullpageApi.moveSectionUp()}>Move up</button>
                 </div>
                 <div className="section h100" style={{ height: '100vh' }}>
-   
+                  <div>这里是个人作品</div>
                 </div>
               </div>
             );
